@@ -1,7 +1,7 @@
 {
   inputs = {
     base.url = "github:chris-martin/cdm-nixos-base";
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
   };
   outputs = inputs:
     let
@@ -17,7 +17,6 @@
           base.extra
           base.fonts
           base.location
-          base.home
           base.networking
           base.nix
           base.printing

@@ -52,11 +52,10 @@
     max-jobs = 1;
   };
 
-  services.xserver = {
-    enable = true;
-    desktopManager.gnome.enable = true;
-    displayManager.gdm.enable = true;
-  };
+  services.xserver.enable = true;
+
+  services.desktopManager.gnome.enable = true;
+  services.displayManager.gdm.enable = true;
 
   services.displayManager.autoLogin = {
     enable = true;
