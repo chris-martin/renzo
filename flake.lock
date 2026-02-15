@@ -6,11 +6,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1769401933,
-        "narHash": "sha256-KnPN67ezDDVGw6rxmRAN/7X0mBHpQYpfxBUadeu/DRs=",
+        "lastModified": 1771142393,
+        "narHash": "sha256-MG2mpCtL6+E9SfuNbMBf8TIlsCHosKkk4lBaCBjs3F0=",
         "owner": "chris-martin",
         "repo": "cdm-nixos-base",
-        "rev": "c876a13a0ce98b39a11287e7c33c57c8324d4c68",
+        "rev": "bb5ad0ef581697293eacf83541fb24b929343dba",
         "type": "github"
       },
       "original": {
@@ -133,11 +133,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1769089682,
-        "narHash": "sha256-9yA/LIuAVQq0lXelrZPjLuLVuZdm03p8tfmHhnDIkms=",
+        "lastModified": 1771043024,
+        "narHash": "sha256-O1XDr7EWbRp+kHrNNgLWgIrB0/US5wvw9K6RERWAj6I=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "078d69f03934859a181e81ba987c2bb033eebfc5",
+        "rev": "3aadb7ca9eac2891d52a9dec199d9580a6e2bf44",
         "type": "github"
       },
       "original": {
