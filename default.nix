@@ -1,4 +1,10 @@
-{ pkgs, lib, config, ... }: {
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}:
+{
 
   imports = [ ./touchpad.nix ];
 
@@ -6,13 +12,21 @@
     tmp.cleanOnBoot = true;
     extraModulePackages = [ ];
     initrd = {
-      availableKernelModules = [ "xhci_pci" "ahci" "nvme" "usb_storage" ];
+      availableKernelModules = [
+        "xhci_pci"
+        "ahci"
+        "nvme"
+        "usb_storage"
+      ];
       luks.devices.root = {
         device = "/dev/nvme0n1p3";
         preLVM = true;
       };
     };
-    kernelModules = [ "kvm-intel" "snd-hda-intel" ];
+    kernelModules = [
+      "kvm-intel"
+      "snd-hda-intel"
+    ];
     kernelParams = [ "pci=nocrs" ];
     loader = {
       grub.device = "/dev/nvme0n1";
@@ -39,7 +53,7 @@
 
   hardware = {
     enableRedistributableFirmware = lib.mkDefault true;
-    bluetooth.enable = false;
+    bluetooth.enable = true;
   };
 
   networking = {
@@ -92,7 +106,13 @@
     enableSSHSupport = true;
   };
 
-  services.dictd.enable = true;
+  services.dictd = {
+    enable = true;
+    DBs = with pkgs.dictdDBs; [
+      wiktionary
+      wordnet
+    ];
+  };
 
   services.openssh = {
     enable = true;

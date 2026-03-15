@@ -6,17 +6,14 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1771142393,
-        "narHash": "sha256-MG2mpCtL6+E9SfuNbMBf8TIlsCHosKkk4lBaCBjs3F0=",
-        "owner": "chris-martin",
-        "repo": "cdm-nixos-base",
-        "rev": "bb5ad0ef581697293eacf83541fb24b929343dba",
-        "type": "github"
+        "lastModified": 1771142399,
+        "narHash": "sha256-H9OH4s7vSAwA2VxrM9O0WFLYTisv574Mqkow34N5058=",
+        "path": "/home/chris/cdm-nixos-base",
+        "type": "path"
       },
       "original": {
-        "owner": "chris-martin",
-        "repo": "cdm-nixos-base",
-        "type": "github"
+        "path": "/home/chris/cdm-nixos-base",
+        "type": "path"
       }
     },
     "editor-cdm": {
