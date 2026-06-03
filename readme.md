@@ -1,1 +1,1 @@
-Renzo is a Dell XPS 13 non-touch from early 2016.
+Moved to https://codeberg.org/chris-martin/renzo
